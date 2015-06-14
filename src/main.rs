@@ -3,6 +3,7 @@ extern crate type_printer;
 fn main() {
     println!("\nMessin' with String\n");
     exploring_str1();
+    exploring_str2();
 }
 
 // Two types &str, and String
@@ -37,3 +38,27 @@ fn exploring_str1() {
 
 // https://en.wikipedia.org/wiki/Static_memory_allocation
 
+
+// I did not realize this
+// Strings will coerce into &str with an &:
+
+// Viewing a String as a &str is cheap,
+// but converting the &str to a
+// String involves allocating memory.
+// No reason to do that unless you have to!
+
+
+fn exploring_str2() {
+   // So I can push a &str onto a mutabale String?
+   let mut name = "Same".to_string();
+   name.push_str(" stuff");
+   println!("&str pushed onto String: {}", name);
+
+   // can I make a mutable string from a nonmutable,
+   // can I clone it and make the clone mutable?
+
+   let cannot_change_me = "Unmoveable".to_owned();
+   let mut changeable = cannot_change_me.clone();
+   changeable.push_str(" something new");
+   println!("Clone to the rescue: {:?}", changeable);
+}
