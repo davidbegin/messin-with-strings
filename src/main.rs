@@ -1,9 +1,15 @@
+#![allow(dead_code, unused_variables)]
+
 extern crate type_printer;
+mod str_vs_string;
 
 fn main() {
     println!("\nMessin' with String\n");
-    exploring_str1();
-    exploring_str2();
+
+    // exploring_str1();
+    // exploring_str2();
+
+    str_vs_string::tell_me_more();
 }
 
 // Two types &str, and String
