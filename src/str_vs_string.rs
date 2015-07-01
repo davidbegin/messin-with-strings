@@ -5,7 +5,7 @@ pub fn tell_me_more() {
     println!("...str versus String...tell me more");
     // tale_of_four_strings();
     // string_and_structs();
-    str_vs_string_confusion();
+    // str_vs_string_confusion();
 }
 
 fn str_vs_string_confusion() {

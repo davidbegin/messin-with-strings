@@ -2,6 +2,7 @@
 
 extern crate type_printer;
 mod str_vs_string;
+mod struct_warm_ups;
 
 fn main() {
     println!("\nMessin' with String\n");
@@ -9,7 +10,8 @@ fn main() {
     // exploring_str1();
     // exploring_str2();
 
-    str_vs_string::tell_me_more();
+    // str_vs_string::tell_me_more();
+    struct_warm_ups::twenty_reps();
 }
 
 // Two types &str, and String
