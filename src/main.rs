@@ -1,9 +1,10 @@
-#![allow(dead_code, unused_variables)]
+#![allow(dead_code, unused_variables, unused_imports)]
 
 extern crate type_printer;
 mod str_vs_string;
 mod struct_warm_ups;
 mod flexible_interfaces;
+mod str_vs_string_as_return_values;
 
 fn main() {
     println!("\nMessin' with String\n");
@@ -13,7 +14,8 @@ fn main() {
 
     // str_vs_string::tell_me_more();
     // struct_warm_ups::twenty_reps();
-    flexible_interfaces::str_vs_string();
+    // flexible_interfaces::str_vs_string();
+    str_vs_string_as_return_values::lemme_see_dat();
 }
 
 // Two types &str, and String
