@@ -5,6 +5,7 @@ mod str_vs_string;
 mod struct_warm_ups;
 mod flexible_interfaces;
 mod str_vs_string_as_return_values;
+mod journey_into_deref;
 
 fn main() {
     println!("\nMessin' with String\n");
@@ -15,7 +16,8 @@ fn main() {
     // str_vs_string::tell_me_more();
     // struct_warm_ups::twenty_reps();
     // flexible_interfaces::str_vs_string();
-    str_vs_string_as_return_values::lemme_see_dat();
+    // str_vs_string_as_return_values::lemme_see_dat();
+    journey_into_deref::no_mans_land();
 }
 
 // Two types &str, and String
